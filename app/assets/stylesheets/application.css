@@ -46,11 +46,7 @@ ul{
     background-color:brown;
     color:white;
 }
-    
-  background-color: #34495e;
-  color: #ECF0F1;
-  padding: 20px
-}
+
 h1{
 text-align: center;
   display: inline-block;
@@ -71,7 +67,7 @@ h2{
     background-color:white;
     list-style-type: none;
     text-align: center;
-  display: inline-block;
+     display: inline-block;
   vertical-align: middle;
   font-size: 32px;
   margin: 20px 0px;
