@@ -1,15 +1,12 @@
 <h1>List Items</h1>
 <ul> 
-<div>
-    <li> <input type="checkbox"> <a href="show/1">finish Geometry project for monday</a> 
-<span class="pomodoro-estimate">3 pomodoros</span> </li>
-<br>
-    <li><input type="checkbox"><a href="show/2">finish english paper</a><span class="pomodoro-estimate"> 2 pomodoros</span></li>
-    <br>
-    <li><input type="checkbox"><a href= "show/3"> go to bestbuy</a> <span class="pomodoro-estimate"> 3 pomodoros</span> </li>
-    <br>
-    <li><input type="checkbox"><a href= "show/4">unbox things</a><span class="pomodoro-estimate"> 1 pomodoros</span></li>
-    <br>
-    <li><input type="checkbox"><a href= "show/5"> relax</a> <span class="pomodoro-estimate">3 pomodoros</span></li>
-    <br>
-</ul></div>
+    <% @todos.each do |todo| %>
+        <li class= "todo_item">
+            <input type="checkbox">
+            <a href= "/todo/show/<%=todo.id%>"> <%=todo.description%> 
+            <span class="pomodoro-estimate"><%=todo.pomodoro_estimate%></span>
+            </a>
+        </li>
+    <%end%>
+</ul>
+<a class="button" href="/todo/new"id="add-new-todo-button">ADD</a>
