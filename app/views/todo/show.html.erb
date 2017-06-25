@@ -2,7 +2,7 @@
  <h1>Todo <%=params[:id]%></h1>
      <h2><%=@todo.description%></h2>
         <h2><%=@todo.pomodoro_estimate%> pomodoros</h2>
-      <div>  <a href= "#">Edit</a>
+      <div>  <a href= "/todo/edit/<%=@todo.id%>">Edit</a>
         <a href= "#"> delete</a>
         <a href= "index.html"> go back...</a>
         </div>
